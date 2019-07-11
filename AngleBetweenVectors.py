@@ -11,7 +11,7 @@ print("Welcome to Eric's program on finding the angle between two vectors.")
 print('\n')
 time.sleep(1.0)
 
-def dot_product(vector1,vector2):
+def dot_product(vector1,vector2): #dot product
     
     #first vector
     
@@ -31,7 +31,7 @@ def dot_product(vector1,vector2):
 
     return (i*i2) + (j*j2) + (k*k2)
 
-def mag(vector1):
+def mag(vector1): #calculates the magnitude of the given vector
     #first vector
     
     i = vector1[0]
@@ -42,8 +42,8 @@ def mag(vector1):
     
     return ((i)**2+(j)**2+(k)**2)**.5
 
-def mag2(vector2):
-    #first vector
+def mag2(vector2): #calculates the magnitude of the given vector
+    #second vector
     
     i = vector2[0]
     
@@ -79,11 +79,11 @@ while True:
 
     m2 = mag2(vector2)
 
-    x = dp/(m1*m2)
+    x = dp/(m1*m2) #here we divide the dot product of both vectors by the product of their magnitudes 
 
-    theta = math.acos(x)
+    theta = math.acos(x) #we then take cosine inverse of the variable 'x', giving us the angle between the vectors
 
-    angle = round(math.degrees(theta),2)
+    angle = round(math.degrees(theta),2) #rounds to the nearest hundredth
 
     print('\n')
 
