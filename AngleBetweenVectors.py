@@ -31,27 +31,16 @@ def dot_product(vector1,vector2): #dot product
 
     return (i*i2) + (j*j2) + (k*k2)
 
-def mag(vector1): #calculates the magnitude of the given vector
-    #first vector
+def mag(vector): #calculates the magnitude of the given vector(s)
     
-    i = vector1[0]
+    i = vector[0]
     
-    j = vector1[1]
+    j = vector[1]
 
-    k = vector1[2]
+    k = vector[2]
     
     return ((i)**2+(j)**2+(k)**2)**.5
 
-def mag2(vector2): #calculates the magnitude of the given vector
-    #second vector
-    
-    i = vector2[0]
-    
-    j = vector2[1]
-
-    k = vector2[2]
-    
-    return ((i)**2+(j)**2+(k)**2)**.5
     
 def NewCalc(): #Basically a restart function after first set of vectors have been entered
     
@@ -77,7 +66,7 @@ while True:
 
     m1 = mag(vector1)
 
-    m2 = mag2(vector2)
+    m2 = mag(vector2)
 
     x = dp/(m1*m2) #here we divide the dot product of both vectors by the product of their magnitudes 
 
